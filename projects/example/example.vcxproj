@@ -1,0 +1,855 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+  	<ProjectConfiguration Include="GTAIV|Itanium">
+      <Configuration>GTAIV</Configuration>
+      <Platform>Itanium</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GTAIV|Win32">
+      <Configuration>GTAIV</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GTAIV|x64">
+      <Configuration>GTAIV</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GTAIV TLAD|Itanium">
+      <Configuration>GTAIV TLAD</Configuration>
+      <Platform>Itanium</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GTAIV TLAD|Win32">
+      <Configuration>GTAIV TLAD</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GTAIV TLAD|x64">
+      <Configuration>GTAIV TLAD</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+	<ProjectConfiguration Include="GTAIV TBOGT|Itanium">
+      <Configuration>GTAIV TBOGT</Configuration>
+      <Platform>Itanium</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GTAIV TBOGT|Win32">
+      <Configuration>GTAIV TBOGT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GTAIV TBOGT|x64">
+      <Configuration>GTAIV TBOGT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RDR SCO|Itanium">
+      <Configuration>RDR SCO</Configuration>
+      <Platform>Itanium</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RDR SCO|Win32">
+      <Configuration>RDR SCO</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RDR SCO|x64">
+      <Configuration>RDR SCO</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RDR _SC|Itanium">
+      <Configuration>RDR _SC</Configuration>
+      <Platform>Itanium</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RDR _SC|Win32">
+      <Configuration>RDR _SC</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RDR _SC|x64">
+      <Configuration>RDR _SC</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GTAV|Itanium">
+      <Configuration>GTAV</Configuration>
+      <Platform>Itanium</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GTAV|Win32">
+      <Configuration>GTAV</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GTAV|x64">
+      <Configuration>GTAV</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{130629F0-649C-4E82-B00A-590905509FFB}</ProjectGuid>
+    <RootNamespace>example</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAV|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RDR _SC|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RDR SCO|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAV|Itanium'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV|Itanium'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|Itanium'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|Itanium'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RDR _SC|Itanium'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RDR SCO|Itanium'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAV|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RDR _SC|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RDR SCO|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GTAV|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RDR _SC|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RDR SCO|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GTAV|Itanium'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV|Itanium'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|Itanium'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|Itanium'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RDR _SC|Itanium'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RDR SCO|Itanium'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GTAV|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RDR _SC|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RDR SCO|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\X360\</OutDir>
+    <IntDir>$(Configuration)\X360\log\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\X360\</OutDir>
+    <IntDir>$(Configuration)\X360\log\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\X360\</OutDir>
+    <IntDir>$(Configuration)\X360\log\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAV|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\X360\</OutDir>
+    <IntDir>$(Configuration)\X360\log\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RDR _SC|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\X360\</OutDir>
+    <IntDir>$(Configuration)\X360\log\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RDR SCO|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\X360\</OutDir>
+    <IntDir>$(Configuration)\X360\log\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV|Itanium'">
+    <OutDir>$(SolutionDir)$(Configuration)\PS3\</OutDir>
+    <IntDir>$(Configuration)\PS3\log\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|Itanium'">
+    <OutDir>$(SolutionDir)$(Configuration)\PS3\</OutDir>
+    <IntDir>$(Configuration)\PS3\log\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|Itanium'">
+    <OutDir>$(SolutionDir)$(Configuration)\PS3\</OutDir>
+    <IntDir>$(Configuration)\PS3\log\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAV|Itanium'">
+    <OutDir>$(SolutionDir)$(Configuration)\PS3\</OutDir>
+    <IntDir>$(Configuration)\PS3\log\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RDR _SC|Itanium'">
+    <OutDir>$(SolutionDir)$(Configuration)\PS3\</OutDir>
+    <IntDir>$(Configuration)\PS3\log\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RDR SCO|Itanium'">
+    <OutDir>$(SolutionDir)$(Configuration)\PS3\</OutDir>
+    <IntDir>$(Configuration)\PS3\log\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)\PC\</OutDir>
+    <IntDir>$(Configuration)\PC\log\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)\PC\</OutDir>
+    <IntDir>$(Configuration)\PC\log\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)\PC\</OutDir>
+    <IntDir>$(Configuration)\PC\log\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTAV|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)\PC\</OutDir>
+    <IntDir>$(Configuration)\PC\log\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RDR _SC|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)\PC\</OutDir>
+    <IntDir>$(Configuration)\PC\log\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RDR SCO|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)\PC\</OutDir>
+    <IntDir>$(Configuration)\PC\log\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GTAV|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/"</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=32;TARGET=TARGET_GTAV;FILETYPE=FILETYPE_XSC;PLATFORM=PLATFORM_X360;ENDIAN=ENDIAN_BIG</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/"</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=32;TARGET=TARGET_GTAIV;FILETYPE=FILETYPE_SCO;PLATFORM=PLATFORM_X360;ENDIAN=ENDIAN_BIG</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/"</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=32;TARGET=TARGET_GTAIV;SUBTARGET=SUBTARGET_TBOGT;FILETYPE=FILETYPE_SCO;PLATFORM=PLATFORM_X360;ENDIAN=ENDIAN_BIG</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/"</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=32;TARGET=TARGET_GTAIV;SUBTARGET=SUBTARGET_TLAD;FILETYPE=FILETYPE_SCO;PLATFORM=PLATFORM_X360;ENDIAN=ENDIAN_BIG</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RDR _SC|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/";Include/</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=32;TARGET=TARGET_RDR;FILETYPE=FILETYPE_XSC;PLATFORM=PLATFORM_X360;ENDIAN=ENDIAN_BIG</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RDR SCO|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/"</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=32;TARGET=TARGET_RDR;FILETYPE=FILETYPE_SCO;PLATFORM=PLATFORM_X360;ENDIAN=ENDIAN_BIG</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GTAV|Itanium'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/"</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=32;TARGET=TARGET_GTAV;__CSC__;PLATFORM=PLATFORM_PS3;ENDIAN=ENDIAN_BIG</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV|Itanium'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/"</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=32;TARGET=TARGET_GTAIV;FILETYPE=FILETYPE_SCO;PLATFORM=PLATFORM_PS3;ENDIAN=ENDIAN_BIG</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|Itanium'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/"</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=32;TARGET=TARGET_GTAIV;SUBTARGET=SUBTARGET_TBOGT;FILETYPE=FILETYPE_SCO;PLATFORM=PLATFORM_PS3;ENDIAN=ENDIAN_BIG</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|Itanium'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/"</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=32;TARGET=TARGET_GTAIV;SUBTARGET=SUBTARGET_TLAD;FILETYPE=FILETYPE_SCO;PLATFORM=PLATFORM_PS3;ENDIAN=ENDIAN_BIG</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RDR _SC|Itanium'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/";Include/</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=32;TARGET=TARGET_RDR;FILETYPE=FILETYPE_CSC;PLATFORM=PLATFORM_PS3;ENDIAN=ENDIAN_BIG</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RDR SCO|Itanium'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/"</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=32;TARGET=TARGET_RDR;FILETYPE=FILETYPE_SCO;PLATFORM=PLATFORM_PS3;ENDIAN=ENDIAN_BIG</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GTAV|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/"</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=64;TARGET=TARGET_GTAV;FILETYPE=FILETYPE_YSC;PLATFORM=PLATFORM_PC;ENDIAN=ENDIAN_LITTLE</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/"</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=64;TARGET=TARGET_GTAIV;FILETYPE=FILETYPE_SCO;PLATFORM=PLATFORM_PC;ENDIAN=ENDIAN_LITTLE</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/"</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=64;TARGET=TARGET_GTAIV;SUBTARGET=SUBTARGET_TBOGT;FILETYPE=FILETYPE_YSC;PLATFORM=PLATFORM_PC;ENDIAN=ENDIAN_LITTLE</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/"</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=64;TARGET=TARGET_GTAIV;SUBTARGET=SUBTARGET_TLAD;FILETYPE=FILETYPE_YSC;PLATFORM=PLATFORM_PC;ENDIAN=ENDIAN_LITTLE</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RDR _SC|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/";Include/</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=64;TARGET=TARGET_RDR;FILETYPE=FILETYPE_YSC;PLATFORM=PLATFORM_PC;ENDIAN=ENDIAN_LITTLE</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RDR SCO|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>"../../include/"</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4391;4392;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);ENDIAN_BIG=0;ENDIAN_LITTLE=1;PLATFORM_X360=0;PLATFORM_PS3=1;PLATFORM_PC=2;TARGET_GTAIV=0;TARGET_GTAV=1;TARGET_RDR=2;FILETYPE_XSC=0;FILETYPE_YSC=1;FILETYPE_CSC=2;FILETYPE_SCO=3;SUBTARGET_TBOGT=0;SUBTARGET_TLAD=1;PTRWIDTH=64;TARGET=TARGET_GTAV;FILETYPE=FILETYPE_SCO;PLATFORM=PLATFORM_PC;ENDIAN=ENDIAN_LITTLE</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="example.c">
+      <Command Condition="'$(Configuration)|$(Platform)'=='GTAV|Win32'">"../../bin/SC-CL.exe" -platform=X360 -target=GTAV -out-dir="$(OutDir)bin\\" -snb -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GTAV|Itanium'">"../../bin/SC-CL.exe" -platform=PS3 -target=GTAV -out-dir="$(OutDir)bin\\" -snb -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GTAV|x64'">"../../bin/SC-CL.exe" -platform=PC -target=GTAV -out-dir="$(OutDir)bin\\" -pc-version=944 -snb -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GTAIV|Win32'">"../../bin/SC-CL.exe" -platform=X360 -target=GTAIV -out-dir="$(OutDir)bin\\" -s -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GTAIV|Itanium'">"../../bin/SC-CL.exe" -platform=PS3 -target=GTAIV -out-dir="$(OutDir)bin\\" -s -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GTAIV|x64'">"../../bin/SC-CL.exe" -platform=PC -target=GTAIV -out-dir="$(OutDir)bin\\" -s -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|Win32'">"../../bin/SC-CL.exe" -platform=X360 -target=GTAIV_TLAD -out-dir="$(OutDir)bin\\" -s -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|Itanium'">"../../bin/SC-CL.exe" -platform=PS3 -target=GTAIV_TLAD -out-dir="$(OutDir)bin\\" -s -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|x64'">"../../bin/SC-CL.exe" -platform=PC -target=GTAIV_TLAD -out-dir="$(OutDir)bin\\" -s -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|Win32'">"../../bin/SC-CL.exe" -platform=X360 -target=GTAIV_TBOGT -out-dir="$(OutDir)bin\\" -s -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|Itanium'">"../../bin/SC-CL.exe" -platform=PS3 -target=GTAIV_TBOGT -out-dir="$(OutDir)bin\\" -s -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|x64'">"../../bin/SC-CL.exe" -platform=PC -target=GTAIV_TBOGT -out-dir="$(OutDir)bin\\" -s -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RDR _SC|Win32'">"../../bin/SC-CL.exe" -platform=X360 -target=RDR_#SC -out-dir="$(OutDir)bin\\" -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RDR _SC|Itanium'">"../../bin/SC-CL.exe" -platform=PS3 -target=RDR_#SC -out-dir="$(OutDir)bin\\" -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RDR _SC|x64'">"../../bin/SC-CL.exe" -platform=PC -target=RDR_#SC -out-dir="$(OutDir)bin\\" -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RDR SCO|Win32'">"../../bin/SC-CL.exe" -platform=X360 -target=RDR_SCO -out-dir="$(OutDir)bin\\" -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RDR SCO|Itanium'">"../../bin/SC-CL.exe" -platform=PS3 -target=RDR_SCO -out-dir="$(OutDir)bin\\" -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RDR SCO|x64'">"../../bin/SC-CL.exe" -platform=PC -target=RDR_SCO -out-dir="$(OutDir)bin\\" -vcx="$(ProjectFileName)" -- -I "../../include/"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GTAV|Win32'">example.dh%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GTAV|Itanium'">example.dh%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GTAV|x64'">example.dh%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GTAIV|Win32'">example.dh%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GTAIV|Itanium'">example.dh%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GTAIV|x64'">example.dh%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|Win32'">example.dh%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|Itanium'">example.dh%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GTAIV TLAD|x64'">example.dh%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|Win32'">example.dh%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|Itanium'">example.dh%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GTAIV TBOGT|x64'">example.dh%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RDR _SC|Win32'">example.dh%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RDR _SC|Itanium'">example.dh%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RDR _SC|x64'">example.dh%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RDR SCO|Win32'">example.dh%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RDR SCO|Itanium'">example.dh%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RDR SCO|x64'">example.dh%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\common.h" />
+    <ClInclude Include="..\..\include\constants.h" />
+    <ClInclude Include="..\..\include\GTAIV\consts32.h" />
+    <ClInclude Include="..\..\include\GTAIV\natives32.h" />
+    <ClInclude Include="..\..\include\GTAIV\natives32Old.h" />
+    <ClInclude Include="..\..\include\GTAV\consts32.h" />
+    <ClInclude Include="..\..\include\GTAV\consts64.h" />
+    <ClInclude Include="..\..\include\GTAV\constsShared.h" />
+    <ClInclude Include="..\..\include\GTAV\natives32.h" />
+    <ClInclude Include="..\..\include\GTAV\natives64.h" />
+    <ClInclude Include="..\..\include\intrinsics.h" />
+    <ClInclude Include="..\..\include\natives.h" />
+    <ClInclude Include="..\..\include\RDR\consts32.h" />
+    <ClInclude Include="..\..\include\RDR\natives32.h" />
+    <ClInclude Include="..\..\include\types.h" />
+    <ClInclude Include="..\..\include\varargs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\include\common.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
