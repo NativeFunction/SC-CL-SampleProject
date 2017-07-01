@@ -30,7 +30,7 @@ Clang Options:
 
 Compiler Options:
 
-  Choose obfuscation level:
+  Choose obfuscation level:  (This option is experimental use at your own risk)
     -Fs                      - Obfuscate string table - GTA V Only
     -F1                      - Enable low obfuscations
     -F2                      - Enable default obfuscations
