@@ -980,13 +980,13 @@ extern __unsafeIntrinsic void __pushString(const char* value);
 extern __unsafeIntrinsic void __getHash();
 /// <summary>
 /// Pops two items off the stack. (char*, char*)
-/// <para>Copys (Stack.Top - 1) into Stack.Top for strLen bytes or until a 0 was hit in (Stack.Top - 1).</para>
+/// <para>Copies (Stack.Top - 1) into Stack.Top for strLen bytes or until a 0 was hit in (Stack.Top - 1).</para>
 /// </summary>
 /// <param name="strLen">The length of the string destination buffer.<para>This value must be an integer literal.</para></param>
 extern __unsafeIntrinsic void __strCopy(const uint strLen);
 /// <summary>
 /// Pops two items off the stack. (signed int32, char*)
-/// <para>Copys the string representation of (Stack.Top - 1) into Stack.Top for strLen bytes or until a 0 was hit in (Stack.Top - 1).</para>
+/// <para>Copies the string representation of (Stack.Top - 1) into Stack.Top for strLen bytes or until a 0 was hit in (Stack.Top - 1).</para>
 /// </summary>
 /// <param name="strLen">The length of the string destination buffer.<para>This value must be an integer literal.</para></param>
 extern __unsafeIntrinsic void __iToS(const uint strLen);
