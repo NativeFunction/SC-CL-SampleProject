@@ -56,7 +56,7 @@ Compiler Options:
     =PC                      -   Target PC (64 bit, little endian)
   -pvi=<uint>                - Sets the starting index for player variables to ignore
   -pvs=<uint>                - Sets the amount of player variables to ignore
-  -s                         - Limits script to one instance on runtime (GTAV)
+  -s                         - Limits script to one instance on runtime (GTAV | GTAIV)
   -target                    - Choose build target:
     =GTAIV                   -   Grand Theft Auto IV (sco output)
     =GTAIV_TLAD              -   Grand Theft Auto IV The Lost and Damned (sco output)
