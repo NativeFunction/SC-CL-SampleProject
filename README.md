@@ -48,6 +48,7 @@ Compiler Options:
   -hvs=<uint>                - Sets the amount of host variables to ignore
   -n                         - Disable function names in script output, Enabled when optimisations are turned on
   -name=<string>             - File name of output script, defaults to input file name
+  -no-rsc7                   - Removes the RSC7 header from the output (GTAV)
   -out-dir=<string>          - Specify the output directory of the script
   -pc-version=<uint>         - Sets the pc version for use in the native translation table
   -platform                  - Choose target platform:
