@@ -136,7 +136,7 @@ typedef union quaternion
 	float v[4];
 } quaternion;
 
-//Colour struct where values range from 0 - 255
+//Color struct where values range from 0 - 255
 typedef union RGBA
 {
 	struct
@@ -149,7 +149,7 @@ typedef union RGBA
 	int col[4];
 } RGBA;
 
-//Colour struct where values range from 0 - 255
+//Color struct where values range from 0 - 255
 typedef union RGB
 {
 	struct
@@ -161,7 +161,7 @@ typedef union RGB
 	int col[3];
 } RGB;
 
-//Colour struct where values range from 0.0 - 1.0
+//Color struct where values range from 0.0 - 1.0
 typedef union FloatRGBA
 {
 	struct
@@ -174,7 +174,7 @@ typedef union FloatRGBA
 	float col[4];
 } FloatRGBA;
 
-//Colour struct where values range from 0.0 - 1.0
+//Color struct where values range from 0.0 - 1.0
 typedef union FloatRGB
 {
 	struct
@@ -185,6 +185,29 @@ typedef union FloatRGB
 	};
 	float col[3];
 } FloatRGB;
+
+typedef union flint
+{
+	int Int;
+	float Float;
+} flint;
+
+typedef union any
+{
+	int Int;
+	float Float;
+	bool Bool;
+	char* CharP;
+	byte* ByteP;
+	int* IntP;
+	float* FloatP;
+	short* ShortP;
+	vector3* Vector3P;
+	quaternion* QuaternionP;
+	byte ByteArray[4];
+	char CharArray[4];
+	short ShortArray[2];
+} any;
 
 typedef enum DataType
 {
@@ -212,38 +235,75 @@ typedef enum DataType
 	DT_FunctionP
 } DataType;
 
-typedef union flint
-{
-	int Int;
-	float Float;
-} flint;
-
-typedef union any
-{
-	int Int;
-	float Float;
-	bool Bool;
-	char* CharP;
-	byte* ByteP;
-	int* IntP;
-	float* FloatP;
-	short* ShortP;
-	vector3* Vector3P;
-	quaternion* QuaternionP;
-	byte ByteArray[4];
-	char CharArray[4];
-	short ShortArray[2];
-} any;
-
 //poor mans constructors
 
-#define Any(x) (any) {x}
-#define RGBA(R,G,B,A) (RGBA){R,G,B,A}
-#define FloatRGBA(R,G,B,A) (FloatRGBA){R,G,B,A}
+/// <summary>Constructs a any type.</summary>
+/// <param name="x">The value you want to store.</param>
+/// <returns>A any type.</returns>
+#define any(x) (any){x}
+
+/// <summary>Constructs a RGBA type.</summary>
+/// <param name="r">The red value to be initialized, in the interval [0,255]</param>
+/// <param name="g">The green value to be initialized, in the interval [0,255]</param>
+/// <param name="b">The blue value to be initialized, in the interval [0,255]</param>
+/// <param name="a">The alpha value to be initialized, in the interval [0,255]</param>
+/// <returns>A RGBA type.</returns>
+#define RGBA(R, G, B, A) (RGBA){R, G, B, A}
+
+/// <summary>Constructs a RGB type.</summary>
+/// <param name="r">The red value to be initialized, in the interval [0,255]</param>
+/// <param name="g">The green value to be initialized, in the interval [0,255]</param>
+/// <param name="b">The blue value to be initialized, in the interval [0,255]</param>
+/// <returns>A RGB type.</returns>
+#define RGB(R, G, B) (RGB){R, G, B}
+
+/// <summary>Constructs a FloatRGBA type.</summary>
+/// <param name="r">The red value to be initialized, in the interval [0.0,1.0]</param>
+/// <param name="g">The green value to be initialized, in the interval [0.0,1.0]</param>
+/// <param name="b">The blue value to be initialized, in the interval [0.0,1.0]</param>
+/// <param name="a">The alpha value to be initialized, in the interval [0.0,1.0]</param>
+/// <returns>A FloatRGBA type.</returns>
+#define FloatRGBA(R, G, B, A) (FloatRGBA){R, G, B, A}
+
+/// <summary>Constructs a FloatRGB type.</summary>
+/// <param name="r">The red value to be initialized, in the interval [0.0,1.0]</param>
+/// <param name="g">The green value to be initialized, in the interval [0.0,1.0]</param>
+/// <param name="b">The blue value to be initialized, in the interval [0.0,1.0]</param>
+/// <returns>A FloatRGB type.</returns>
+#define FloatRGB(R, G, B) (FloatRGB){R, G, B}
+
+/// <summary>Constructs a vector2 Point type.</summary>
+/// <param name="x">The x axis to be initialized.</param>
+/// <param name="y">The y axis to be initialized.</param>
+/// <returns>A Point type.</returns>
 #define Point(x, y) (Point){x, y}
+
+/// <summary>Constructs a vector2 Size type.</summary>
+/// <param name="w">The width to be initialized.</param>
+/// <param name="h">The height to be initialized.</param>
+/// <returns>A Size type.</returns>
 #define Size(w, h) (Size){w, h}
-#define Vector2(x, y) (vector2){x, y}
-#define Vector3(x,y,z) (vector3){x,y,z}
+
+/// <summary>Constructs a vector2 type.</summary>
+/// <param name="x">The x axis to be initialized.</param>
+/// <param name="y">The y axis to be initialized.</param>
+/// <returns>A vector2 type.</returns>
+#define vector2(x, y) (vector2){x, y}
+
+/// <summary>Constructs a vector3 type.</summary>
+/// <param name="x">The x axis to be initialized.</param>
+/// <param name="y">The y axis to be initialized.</param>
+/// <param name="z">The z axis to be initialized.</param>
+/// <returns>A vector3 type.</returns>
+#define vector3(x, y, z) (vector3){x, y, z}
+
+/// <summary>Constructs a quaternion type.</summary>
+/// <param name="x">X component of the quaternion.</param>
+/// <param name="y">Y component of the quaternion.</param>
+/// <param name="z">Z component of the quaternion.</param>
+/// <param name="w">W component of the quaternion.</param>
+/// <returns>A quaternion type.</returns>
+#define quaternion(x, y, z, w) (quaternion){x, y, z, w}
 
 typedef void* SizedArray;
 
