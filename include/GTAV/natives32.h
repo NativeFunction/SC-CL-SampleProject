@@ -934,6 +934,7 @@ extern _native void UNK_0x4BBE5E2C(any p0, any p1, any p2, any p3, any p4)l
 extern _native void UNK_0xA89A53F2(Ped ped)l
 #pragma endregion //}
 #pragma region VEHICLE //{
+extern _native bool SET_VEHICLE_ON_GROUND_PROPERLY(Vehicle vehicle)l
 extern _native Vehicle CREATE_VEHICLE(Hash modelHash, vector3 vec, float heading, bool isNetwork, bool p6)l
 extern _native void DELETE_VEHICLE(Vehicle* vehicle)l
 extern _native void UNK_0xBB54ECCA(Vehicle vehicle, bool p1, bool p2)l
@@ -1790,6 +1791,7 @@ extern _native void UNCUFF_PED(Ped ped)l
 extern _native bool IS_PED_CUFFED(Ped ped)l
 #pragma endregion //}
 #pragma region GAMEPLAY //{
+extern _native int GET_CURRENT_LANGUAGE()l
 extern _native int GET_ALLOCATED_STACK_SIZE()l
 extern _native32(0x11A178B8) int _GET_FREE_STACK_SLOTS_COUNT(int stackSize)l
 extern _native void SET_RANDOM_SEED(int time)l
