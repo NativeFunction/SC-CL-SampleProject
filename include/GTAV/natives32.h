@@ -3804,6 +3804,7 @@ extern _native bool IS_ENTITY_ON_FIRE(Entity entity)l
 extern _native int GET_NUMBER_OF_FIRES_IN_RANGE(vector3 vec, float radius)l
 extern _native void STOP_FIRE_IN_RANGE(vector3 vec, float radius)l
 extern _native bool GET_CLOSEST_FIRE_POS(vector3* outPosition, vector3 vec)l
+extern _native void ADD_EXPLOSION(vector3 vec, int explosionType, float damageScale, bool isAudible, bool isInvisible, float cameraShake)l
 extern _native void ADD_OWNED_EXPLOSION(Ped ped, vector3 vec, int explosionType, float damageScale, bool isAudible, bool isInvisible, float cameraShake)l
 extern _native void ADD_EXPLOSION_WITH_USER_VFX(vector3 vec, int explosionType, Hash explosionFx, float damageScale, bool isAudible, bool isInvisible, float cameraShake)l
 extern _native bool IS_EXPLOSION_IN_AREA(int explosionType, vector3 vec_1, vector3 vec_2)l
