@@ -218,8 +218,8 @@ typedef enum eButton
 	BUTTON_R1 = 6,
 	BUTTON_R2 = 7,
 	BUTTON_SELECT = 13,
-	BUTTON_Square = 14,
-	BUTTON_Triangle = 15,
+	BUTTON_SQUARE = 14,
+	BUTTON_TRIANGLE = 15,
 	BUTTON_O = 17,
 
 } eButton;

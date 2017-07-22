@@ -238,11 +238,10 @@ typedef enum eButton
 	BUTTON_Y = 4,
 	BUTTON_B = 5,
 	BUTTON_A = 6,
-	BUTTON_X = 
-	#if PLATFORM == PLATFORM_X360
-	7,
+	#if PLATFORM == PLATFORM_X360 || PLATFORM == PLATFORM_PC
+	BUTTON_X = 7,
 	#elif PLATFORM == PLATFORM_PS3
-	6,
+	BUTTON_X = 6,
 	#endif
 	BUTTON_BACK = 8,
 	BUTTON_L3 = 9,
