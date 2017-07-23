@@ -142,3 +142,11 @@ typedef int* va_list;
 /// <returns></returns>
 #define va_scount(pN)	\
 	(*(int*)((char*)(&pN) + __va_argsiz(pN) + sizeof(va_list) + sizeof(int)))
+
+#define __NARG__(...)  __NARG_I_(__VA_ARGS__,__RSEQ_N())
+#define __NARG_I_(...) __ARG_N(__VA_ARGS__)
+#define __ARG_N(_1, _2, _3, _4,_5,_6, _7, _8, _9, _10, N ,...) N
+#define __RSEQ_N() 10,9,8,7,6,5,4,3,2,1,0
+#define _OVERLOAD_(name, n) name##n
+#define _OVERLOAD(name, n) _OVERLOAD_(name, n)
+#define OVERLOAD(func, ...) _OVERLOAD(func, __NARG__(__VA_ARGS__)) (__VA_ARGS__)
