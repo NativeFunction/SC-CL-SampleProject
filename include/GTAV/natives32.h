@@ -210,6 +210,7 @@ extern _native bool IS_PLAYER_TELEPORT_ACTIVE()l
 extern _native float GET_PLAYER_CURRENT_STEALTH_NOISE(Player player)l
 extern _native void SET_PLAYER_HEALTH_RECHARGE_MULTIPLIER(Player player, float regenRate)l
 extern _native void SET_PLAYER_WEAPON_DAMAGE_MODIFIER(Player player, float damageAmount)l
+extern _native void SET_PLAYER_MELEE_WEAPON_DAMAGE_MODIFIER(Player player, float damageAmount)l
 extern _native void SET_PLAYER_WEAPON_DEFENSE_MODIFIER(Player player, float modifier)l
 extern _native void SET_PLAYER_MELEE_WEAPON_DEFENSE_MODIFIER(Player player, float modifier)l
 extern _native void SET_PLAYER_VEHICLE_DAMAGE_MODIFIER(Player player, float damageAmount)l
@@ -2767,6 +2768,7 @@ extern _native int GET_NUMBER_OF_EVENTS(bool p0)l
 extern _native bool GET_EVENT_EXISTS(bool p0, int p1)l
 extern _native int GET_EVENT_AT_INDEX(bool p0, int p1)l
 extern _native bool GET_EVENT_DATA(bool p0, int p1, int* p2, int p3)l
+extern _native void TRIGGER_SCRIPT_EVENT(bool p0, int *args, int argCount, int bit)l
 extern _native void SHUTDOWN_LOADING_SCREEN()l
 extern _native void SET_NO_LOADING_SCREEN(bool toggle)l
 extern _native void UNK_0xB03BCCDF()l
@@ -3315,12 +3317,14 @@ extern _native32(0x633F8C48) bool _START_PARTICLE_FX_NON_LOOPED_AT_COORD_2(const
 extern _native bool START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE(const char* effectName, Ped ped, vector3 offset, vector3 rot, int boneIndex, float scale, bool axisX, bool axisY, bool axisZ)l
 extern _native32(0x161780C1) bool _START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE_2(const char* effectName, Ped ped, vector3 offset, vector3 rot, int boneIndex, float scale, bool axisX, bool axisY, bool axisZ)l
 extern _native bool START_PARTICLE_FX_NON_LOOPED_ON_ENTITY(const char* effectName, Entity entity, vector3 offset, vector3 rot, float scale, bool axisX, bool axisY, bool axisZ)l
+extern _native32(0x469A2B4A) bool _START_PARTICLE_FX_NON_LOOPED_ON_ENTITY_2(const char* effectName, Entity entity, vector3 offset, vector3 rot, float scale, bool axisX, bool axisY, bool axisZ)l
 extern _native void SET_PARTICLE_FX_NON_LOOPED_COLOUR(FloatRGB colour)l
 extern _native void SET_PARTICLE_FX_NON_LOOPED_ALPHA(float alpha)l
-extern _native int START_PARTICLE_FX_LOOPED_AT_COORD(const char* effectName, vector3 vec, vector3 Rot, float scale, bool xAxis, bool yAxis, bool zAxis, bool p11)l
-extern _native int START_PARTICLE_FX_LOOPED_ON_PED_BONE(const char* effectName, Ped ped, vector3 Offset, vector3 Rot, int boneIndex, float scale, bool xAxis, bool yAxis, bool zAxis)l
-extern _native int START_PARTICLE_FX_LOOPED_ON_ENTITY(const char* effectName, Entity entity, vector3 Offset, vector3 Rot, float scale, bool xAxis, bool yAxis, bool zAxis)l
-extern _native32(0x110752B2) int _START_PARTICLE_FX_LOOPED_ON_ENTITY_2(const char* effectName, Entity entity, vector3 Offset, vector3 Rot, float scale, bool xAxis, bool yAxis, bool zAxis)l
+extern _native int START_PARTICLE_FX_LOOPED_AT_COORD(const char* effectName, vector3 pos, vector3 rot, float scale, bool xAxis, bool yAxis, bool zAxis, bool p11)l
+extern _native int START_PARTICLE_FX_LOOPED_ON_PED_BONE(const char* effectName, Ped ped, vector3 pos, vector3 rot, int boneIndex, float scale, bool xAxis, bool yAxis, bool zAxis)l
+extern _native32(0xF478EFCF) int _START_PARTICLE_FX_LOOPED_ON_PED_BONE_2(const char* effectName, Entity entity, vector3 Offset, vector3 Rot, int boneIndex, float scale, bool xAxis, bool yAxis, bool zAxis)l
+extern _native int START_PARTICLE_FX_LOOPED_ON_ENTITY(const char* effectName, Entity entity, vector3 pos, vector3 rot, float scale, bool xAxis, bool yAxis, bool zAxis)l
+extern _native32(0x110752B2) int _START_PARTICLE_FX_LOOPED_ON_ENTITY_2(const char* effectName, Entity entity, vector3 pos, vector3 rot, float scale, bool xAxis, bool yAxis, bool zAxis)l
 extern _native void STOP_PARTICLE_FX_LOOPED(int ptfxHandle, bool p1)l
 extern _native void REMOVE_PARTICLE_FX(int ptfxHandle, bool p1)l
 extern _native void REMOVE_PARTICLE_FX_FROM_ENTITY(Entity entity)l
@@ -3997,6 +4001,7 @@ extern _native void NETWORK_SET_KEEP_FOCUSPOINT(bool p0, any p1)l
 extern _native void UNK_0x6EFC2FD0(any p0)l
 extern _native bool UNK_0x60AA4AA1()l
 extern _native bool UNK_0x132CA01E()l
+extern _native bool NETWORK_SEND_TEXT_MESSAGE(const char* message, NetworkHandle networkHandle)l
 extern _native void NETWORK_SET_ACTIVITY_SPECTATOR(bool toggle)l
 extern _native any NETWORK_IS_ACTIVITY_SPECTATOR()l
 extern _native void NETWORK_SET_ACTIVITY_SPECTATOR_MAX(int maxSpectators)l
@@ -4156,9 +4161,21 @@ extern _native Vehicle NET_TO_VEH(int netHandle)l
 extern _native Ped NET_TO_PED(int netHandle)l
 extern _native Object NET_TO_OBJ(int netHandle)l
 extern _native Entity NET_TO_ENT(int netHandle)l
+extern _native void NETWORK_GET_LOCAL_HANDLE(NetworkHandle networkHandle, int bufferSize)l
+extern _native void NETWORK_HANDLE_FROM_USER_ID(const char* userId, NetworkHandle networkHandle, int bufferSize)l
+extern _native void NETWORK_HANDLE_FROM_MEMBER_ID(const char* memberId, NetworkHandle networkHandle, int bufferSize)l
+extern _native void NETWORK_HANDLE_FROM_PLAYER(Player player, NetworkHandle networkHandle, int bufferSize)l
+extern _native void NETWORK_HANDLE_FROM_FRIEND(Player friendIndex, NetworkHandle networkHandle, int bufferSize)l
+extern _native bool NETWORK_GAMERTAG_FROM_HANDLE_START(NetworkHandle networkHandle)l
+extern _native const char* NETWORK_GET_GAMERTAG_FROM_HANDLE(NetworkHandle networkHandle)l
+extern _native bool NETWORK_ARE_HANDLES_THE_SAME(NetworkHandle netHandle1, NetworkHandle netHandle2)l
+extern _native bool NETWORK_IS_HANDLE_VALID(NetworkHandle networkHandle, int bufferSize)l
+extern _native Player NETWORK_GET_PLAYER_FROM_GAMER_HANDLE(NetworkHandle networkHandle)l
+extern _native const char* NETWORK_MEMBER_ID_FROM_GAMER_HANDLE(NetworkHandle networkHandle)l
+extern _native bool NETWORK_IS_GAMER_IN_MY_SESSION(NetworkHandle networkHandle)l
 extern _native bool NETWORK_GAMERTAG_FROM_HANDLE_PENDING()l
 extern _native bool NETWORK_GAMERTAG_FROM_HANDLE_SUCCEEDED()l
-extern _native void NETWORK_SHOW_PROFILE_UI(int* networkHandle)l
+extern _native void NETWORK_SHOW_PROFILE_UI(NetworkHandle networkHandle)l
 extern _native const char* NETWORK_PLAYER_GET_NAME(Player player)l
 extern _native const char* NETWORK_PLAYER_GET_USERID(Player player, int* userID)l
 extern _native bool NETWORK_PLAYER_IS_ROCKSTAR_DEV(Player player)l
@@ -4168,6 +4185,9 @@ extern _native int NETWORK_GET_MAX_FRIENDS()l
 extern _native int NETWORK_GET_FRIEND_COUNT()l
 extern _native const char* NETWORK_GET_FRIEND_NAME(Player player)l
 extern _native bool NETWORK_IS_FRIEND_ONLINE(const char* name)l
+extern _native bool NETWORK_IS_FRIEND_IN_SAME_TITLE(const char* friendName)l
+extern _native bool NETWORK_IS_FRIEND_IN_MULTIPLAYER(const char* friendName)l
+extern _native bool NETWORK_IS_FRIEND(NetworkHandle networkHandle)l
 extern _native any NETWORK_IS_PENDING_FRIEND(any p0)l
 extern _native any NETWORK_IS_ADDING_FRIEND()l
 extern _native bool NETWORK_ADD_FRIEND(any* p0, const char* p1)l
@@ -4219,13 +4239,16 @@ extern _native void NETWORK_SET_FRIENDLY_FIRE_OPTION(bool toggle)l
 extern _native void NETWORK_SET_RICH_PRESENCE(any p0, any p1, any p2, any p3)l
 extern _native void UNK_0x017E6777(any p0, any p1)l
 extern _native int NETWORK_GET_TIMEOUT_TIME()l
-extern _native void UNK_0xBE6A30C3(Player player, vector3 vec, bool p4, bool p5)l
+extern _native32(0xBE6A30C3) void _NETWORK_RESPAWN_COORDS(Player player, vector3 vec, bool p4, bool p5)l
+extern _native bool NETWORK_CLAN_PLAYER_IS_ACTIVE(NetworkHandle networkHandle)l
+extern _native bool NETWORK_CLAN_PLAYER_GET_DESC(int* clanDesc, int bufferSize, NetworkHandle networkHandle)l
 extern _native void UNK_0x22E03AD0(Player player, bool p1)l
 extern _native void UNK_0xCEAE5AFC(Entity entity)l
 extern _native32(0xF5F4BD95) bool _NETWORK_PLAYER_IS_IN_CLAN()l
 extern _native bool UNK_0x54E79E9C(int* clanDesc, int bufferSize)l
 extern _native32(0x807B3450) int _GET_NUM_MEMBERSHIP_DESC()l
 extern _native bool NETWORK_CLAN_GET_MEMBERSHIP_DESC(int* memberDesc, int p1)l
+extern _native bool NETWORK_CLAN_DOWNLOAD_MEMBERSHIP(NetworkHandle networkHandle)l
 extern _native bool NETWORK_CLAN_DOWNLOAD_MEMBERSHIP_PENDING(any* p0)l
 extern _native32(0x83ED8E08) bool _NETWORK_IS_CLAN_MEMBERSHIP_FINISHED_DOWNLOADING()l
 extern _native bool NETWORK_CLAN_REMOTE_MEMBERSHIPS_ARE_IN_CACHE(int* p0)l
@@ -4261,6 +4284,7 @@ extern _native void SET_PLAYER_INVISIBLE_LOCALLY(Player player, bool toggle)l
 extern _native void SET_PLAYER_VISIBLE_LOCALLY(Player player, bool toggle)l
 extern _native void FADE_OUT_LOCAL_PLAYER(bool p0)l
 extern _native void NETWORK_FADE_OUT_ENTITY(Entity entity, bool normal, bool slow)l
+extern _native void NETWORK_FADE_IN_ENTITY(Entity entity, bool state)l
 extern _native bool IS_PLAYER_IN_CUTSCENE(Player player)l
 extern _native void SET_ENTITY_VISIBLE_IN_CUTSCENE(any p0, bool p1, bool p2)l
 extern _native void SET_ENTITY_LOCALLY_INVISIBLE(Entity entity)l
@@ -4308,6 +4332,8 @@ extern _native bool NETWORK_IS_PLAYER_IN_MP_CUTSCENE(Player player)l
 extern _native void SET_NETWORK_VEHICLE_RESPOT_TIMER(int netId, any p1)l
 extern _native void UNK_0xEA235081(Entity entity, bool p1)l
 extern _native void USE_PLAYER_COLOUR_INSTEAD_OF_TEAM_COLOUR(bool toggle)l
+extern _native int NETWORK_CREATE_SYNCHRONISED_SCENE(vector3 position, vector3 rotation, int p6, int p7, int p8, float p9)l
+extern _native void NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(Ped ped, int netScene, char* animDict, char* animnName, float speed, float speedMultiplier, int duration, int flag, float playbackRate, int p9)l
 extern _native void NETWORK_ADD_ENTITY_TO_SYNCHRONISED_SCENE(Entity entity, int netScene, const char* animDict, const char* animName, float speed, float speedMulitiplier, int flag)l
 extern _native32(0xBFFE8B5C) void _NETWORK_FORCE_LOCAL_USE_OF_SYNCED_SCENE_CAMERA(int netScene, const char* animDict, const char* animName)l
 extern _native void NETWORK_ATTACH_SYNCHRONISED_SCENE_TO_ENTITY(int netScene, Entity entity, int bone)l
