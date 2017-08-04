@@ -3322,7 +3322,7 @@ extern _native void SET_PARTICLE_FX_NON_LOOPED_COLOUR(FloatRGB colour)l
 extern _native void SET_PARTICLE_FX_NON_LOOPED_ALPHA(float alpha)l
 extern _native int START_PARTICLE_FX_LOOPED_AT_COORD(const char* effectName, vector3 pos, vector3 rot, float scale, bool xAxis, bool yAxis, bool zAxis, bool p11)l
 extern _native int START_PARTICLE_FX_LOOPED_ON_PED_BONE(const char* effectName, Ped ped, vector3 pos, vector3 rot, int boneIndex, float scale, bool xAxis, bool yAxis, bool zAxis)l
-extern _native32(0xF478EFCF) int _START_PARTICLE_FX_LOOPED_ON_PED_BONE_2(const char* effectName, Entity entity, vector3 Offset, vector3 Rot, int boneIndex, float scale, bool xAxis, bool yAxis, bool zAxis)l
+extern _native32(0xF478EFCF) int _START_PARTICLE_FX_LOOPED_ON_PED_BONE_2(const char* effectName, Ped ped, vector3 Offset, vector3 Rot, int boneIndex, float scale, bool xAxis, bool yAxis, bool zAxis)l
 extern _native int START_PARTICLE_FX_LOOPED_ON_ENTITY(const char* effectName, Entity entity, vector3 pos, vector3 rot, float scale, bool xAxis, bool yAxis, bool zAxis)l
 extern _native32(0x110752B2) int _START_PARTICLE_FX_LOOPED_ON_ENTITY_2(const char* effectName, Entity entity, vector3 pos, vector3 rot, float scale, bool xAxis, bool yAxis, bool zAxis)l
 extern _native void STOP_PARTICLE_FX_LOOPED(int ptfxHandle, bool p1)l
