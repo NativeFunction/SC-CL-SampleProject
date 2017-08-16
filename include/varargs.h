@@ -143,10 +143,39 @@ typedef int* va_list;
 #define va_scount(pN)	\
 	(*(int*)((char*)(&pN) + __va_argsiz(pN) + sizeof(va_list) + sizeof(int)))
 
-#define __NARG__(...)  __NARG_I_(__VA_ARGS__,__RSEQ_N())
-#define __NARG_I_(...) __ARG_N(__VA_ARGS__)
-#define __ARG_N(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, N ,...) N
-#define __RSEQ_N() 20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0
+#define __OL_N(number) number, impossible, number
+#define __OL_S 1, 0, 1,
+#define __OL_CIP(...) ,
+#define __OL_LP (
+#define __OL_EX(...) __VA_ARGS__
+#define __OL_CH(...) __OL_EX(__OL_LOG __OL_LP __VA_ARGS__ __OL_CIP __VA_ARGS__ __OL_CIP __VA_ARGS__ (), \
+	__OL_N(20), __OL_N(19), __OL_N(18), __OL_N(17), __OL_N(16), __OL_N(15), __OL_N(14), __OL_N(13), __OL_N(12), __OL_N(11), __OL_N(10), \
+	__OL_N(9), __OL_N(8), __OL_N(7), __OL_N(6), __OL_N(5), __OL_N(4), __OL_N(3), __OL_N(2), __OL_S ))
+#define __OL_LOG(		\
+arg1, arg1_0, arg1_1,	\
+arg2, arg2_0, arg2_1,	\
+arg3, arg3_0, arg3_1,	\
+arg4, arg4_0, arg4_1,	\
+arg5, arg5_0, arg5_1,	\
+arg6, arg6_0, arg6_1,	\
+arg7, arg7_0, arg7_1,	\
+arg8, arg8_0, arg8_1,	\
+arg9, arg9_0, arg9_1,	\
+arg10, arg10_0, arg10_1,	\
+arg11, arg11_0, arg11_1,	\
+arg12, arg12_0, arg12_1,	\
+arg13, arg13_0, arg13_1,	\
+arg14, arg14_0, arg14_1,	\
+arg15, arg15_0, arg15_1,	\
+arg16, arg16_0, arg16_1,	\
+arg17, arg17_0, arg17_1,	\
+arg18, arg18_0, arg18_1,	\
+arg19, arg19_0, arg19_1,	\
+arg20, arg20_0, arg20_1,	\
+arg, ...) arg
+
 #define _OVERLOAD_(name, n) name##n
 #define _OVERLOAD(name, n) _OVERLOAD_(name, n)
-#define OVERLOAD(func, ...) _OVERLOAD(func, __NARG__(__VA_ARGS__)) (__VA_ARGS__)
+#define OVERLOAD(func, ...) _OVERLOAD(func, __OL_CH(__VA_ARGS__)) (__VA_ARGS__)
+
+
