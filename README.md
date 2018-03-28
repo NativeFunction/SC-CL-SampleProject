@@ -1,6 +1,10 @@
 # SC-CL
 SC-CL is a Clang Compiler targeted towards Rockstar's scripting format.
 
+Source
+---------------------------------
+https://bitbucket.org/scclteam/sc-cl
+
 Supported Targets
 ---------------------------------
 * Grand Theft Auto 4
