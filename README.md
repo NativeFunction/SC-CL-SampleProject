@@ -1,9 +1,10 @@
-# SC-CL
-SC-CL is a Clang Compiler targeted towards Rockstar's scripting format.
+# SC-CL Sample Project
+SC-CL is a Clang Compiler targeted towards Rockstar's scripting format.<br>
+This project is a "hello world" sample using SC-CL.
 
-Source
+SC-CL Source
 ---------------------------------
-https://bitbucket.org/scclteam/sc-cl
+https://github.com/NativeFunction/SC-CL
 
 Supported Targets
 ---------------------------------
